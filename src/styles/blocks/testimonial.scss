@@ -1,15 +1,14 @@
-.testimonial{
+.testimonial {
   padding-bottom: 120px;
 
-  @include onTablet{
+  @include onTablet {
     padding-bottom: 148px;
   }
 
-
-  &__label{
+  &__label {
     margin: 0;
     margin-bottom: 16px;
-    color: #C0CDD7;
+    color: #c0cdd7;
     font-weight: 700;
     font-size: 13px;
     line-height: 19.5px;
@@ -17,7 +16,7 @@
     text-transform: uppercase;
   }
 
-  &__title{
+  &__title {
     margin: 0;
     margin-bottom: 48px;
     color: #253757;
@@ -25,40 +24,41 @@
     font-size: 32px;
     line-height: 48px;
 
-    @include onTablet{
+    @include onTablet {
       max-width: 200px;
       margin-bottom: 56px;
     }
 
-    @include onDesktop{
+    @include onDesktop {
       margin-bottom: 85px;
     }
   }
 
-  &__cards{
+  &__cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
 
-    @include onTablet{
+    @include onTablet {
       gap: 30px;
     }
 
-    @include onDesktop{
+    @include onDesktop {
       flex-direction: row;
     }
-
   }
 
-
-
-  &__card{
+  &__card {
     background-color: #fff;
     border-radius: 16px;
 
-    &-content{
+    @include onDesktop {
+      width: 362px;
+    }
+
+    &-content {
       padding: 32px 42px;
       display: flex;
       flex-direction: column;
@@ -67,55 +67,55 @@
       text-align: center;
     }
 
-    &-img{
+    &-img {
       width: 100%;
       max-width: 250px;
       height: 100%;
       object-fit: cover;
     }
 
-
-
-
-    &-mark{
+    &-mark {
       width: 24px;
       height: 24px;
       margin-bottom: 8px;
 
-      @include onTablet{
+      @include onTablet {
         margin-bottom: 16px;
       }
     }
 
-    &-info{
+    &-info {
       margin: 0;
       margin-bottom: 16px;
-      font-family: Open Sans, serif;
-      color: #6C788B;
+      font-family:
+        Open Sans,
+        serif;
+      color: #6c788b;
       font-weight: 600;
       font-size: 13px;
       line-height: 19.5px;
     }
 
-    &-name{
+    &-name {
       margin: 0;
       margin-bottom: 4px;
-      font-family: Open Sans, serif;
+      font-family:
+        Open Sans,
+        serif;
       font-weight: 600;
       font-size: 13px;
       line-height: 19.5px;
       color: #253757;
     }
 
-    &-desc{
+    &-desc {
       margin: 0;
-      color: #C0CDD7;
+      color: #c0cdd7;
       font-weight: 700;
       font-size: 13px;
       line-height: 19.5px;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-
   }
 }
