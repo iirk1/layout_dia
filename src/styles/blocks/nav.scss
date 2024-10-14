@@ -1,7 +1,7 @@
-.nav{
+.nav {
   display: none;
 
-  &__button{
+  &__button {
     padding: 10px 0;
     position: relative;
     font-weight: 700;
@@ -12,35 +12,31 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-  &__button::after{
+  &__button::after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #2060F6;
+    background-color: #2060f6;
     border-radius: 4px;
   }
 
-
-  @include onDesktop{
+  @include onDesktop {
     display: block;
-    &__list{
+    &__list {
       display: flex;
       flex-wrap: wrap;
       gap: 48px;
 
-
-
-      &--item{
+      &--item {
         height: 20px;
         padding: 10px;
         cursor: pointer;
-
       }
 
-      &--link{
+      &--link {
         position: relative;
         font-weight: 700;
         font-size: 13px;
@@ -57,7 +53,7 @@
           position: absolute;
           bottom: -8px;
           height: 2px;
-          background-color: #2060F6;
+          background-color: #2060f6;
           border-radius: 4px;
 
           transition: transform 0.3s;
@@ -70,7 +66,5 @@
         }
       }
     }
-
+  }
 }
-}
-
