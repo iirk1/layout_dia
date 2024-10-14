@@ -54,6 +54,13 @@
     background-color: #fff;
     border-radius: 16px;
 
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 5px 5px 10px rgba(48, 80, 222, 0.5);
+    }
+
     @include onDesktop {
       width: 362px;
     }
